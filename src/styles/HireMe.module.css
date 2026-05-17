@@ -1,0 +1,130 @@
+.section {
+  padding: 6rem 0;
+  background: #0a0a0a00;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #7bf8388d, #6bf65c92);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  position: relative;
+  padding: 2.5rem 2rem;
+  background: rgba(17, 61, 16, 0.328);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  border-radius: 24px;
+  backdrop-filter: blur(12px);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: rgba(56, 248, 207, 0.375);
+  box-shadow: 0 20px 50px rgba(56, 248, 149, 0.15);
+  border-radius: 40%;
+}
+
+.number {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(165, 248, 56, 0.465);
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.card p {
+  color: #94a3b8;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(90deg, #68f83894, #7df65cc3);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(56, 248, 142, 0.25);
+}
+
+.button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(131, 246, 92, 0.607);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .header h2 {
+    font-size: 2.2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 2rem 1.5rem;
+  }
+
+  .number {
+    font-size: 2.5rem;
+  }
+
+  .card h3 {
+    font-size: 1.25rem;
+  }
+}

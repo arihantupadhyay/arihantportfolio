@@ -1,0 +1,116 @@
+.hero {
+  position: relative;
+  width: 100%;
+  margin-top: -80px;
+
+  padding-top: 80px;
+
+}
+
+
+.topIntro {
+  position: absolute;
+  top: 44%;
+  left: 17%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+  background: transparent;
+  max-width: 1000px;
+  text-align: left;
+}
+
+.topIntro h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.topIntro h1 span {
+  color: #f89238d4;
+}
+
+.topIntro h2 {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0;
+}
+
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+}
+
+
+.background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+
+.contentBelow {
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 6rem 8%;
+  background: #0a0a0a00;
+  color: #ffffffd1;
+}
+
+.buttons a {
+  height: 60px;
+  width: 100px;
+
+  border-radius: 40%;
+  display: inline-block;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: -70px;
+    padding-top: 70px;
+  }
+
+  .topIntro {
+    display: none;
+    left: 5%;
+    right: 5%;
+    max-width: none;
+    text-align: center;
+    top: 50%;
+  }
+
+  .topIntro h1 {
+    font-size: 2.5rem;
+  }
+
+  .topIntro h2 {
+    font-size: 1.3rem;
+  }
+
+  .contentBelow {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 5%;
+  }
+}
