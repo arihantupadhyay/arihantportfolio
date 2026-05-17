@@ -1,7 +1,7 @@
 import styles from "@/styles/About.module.css";
 import Image from "next/image";
 
-const galleryImages = ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg", "/5.jpg","/Arihant22.jpeg"];
+const galleryImages = ["/1.jpg", "/2.jpg",  "/4.jpg", "/5.jpg","/Arihant22.jpeg"];
 
 export default function About() {
   return (
